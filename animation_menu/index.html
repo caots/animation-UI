@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>animation menu</title>
+  </head>
+  <body>
+    <section class="banner">
+      <header>
+        <a href="#" class="logo">Watch</a>
+        <div class="toggle" onclick="toggle()"></div>
+      </header>
+      <div class="content">
+        <div class="contentBx">
+          <h2>
+            Future on<br />
+            your Hand
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+            accusantium error nobis deleniti consequatur vel molestiae suscipit
+            ducimus! Laudantium ipsum provident reprehenderit fuga dolorum
+            inventore voluptatum sit eligendi debitis nemo.xw
+          </p>
+          <a href="#">Buy now</a>
+        </div>
+        <div class="imgBx">
+          <img src="./img/watch.png" alt="" />
+        </div>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="">
+            <img src="./img/facebook.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./img/instagram.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./img/twitter.png" alt="" />
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Service</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </section>
+    <script>
+      function toggle() {
+        const toggle = document.querySelector(".toggle");
+        const banner = document.querySelector(".banner");
+        toggle.classList.toggle("active");
+        banner.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
